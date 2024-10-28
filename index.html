@@ -1,125 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Veterinaria</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clínica Veterinaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Nuestro Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="#">Clínica Veterinaria</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#equipo">Nuestro Equipo</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="pt-5 text-center text-light bg-primary">
+        <div class="container">
+            <h1 class="display-4">Bienvenidos a la Clínica Veterinaria 🐾</h1>
+            <p class="lead">Ofrecemos el mejor cuidado para tu mascota.</p>
+            <img src="https://images.pexels.com/photos/5207791/pexels-photo-5207791.jpeg" class="img-fluid my-3" alt="Clínica Veterinaria">
+            <a href="#contacto" class="btn btn-light btn-lg">Contáctanos</a>
+        </div>
+    </section>
 
-  <!-- Inicio Section -->
-  <section id="inicio" class="text-center mt-5 pt-5">
-    <div class="container">
-      <h1 class="display-4">Bienvenidos a Nuestra Clínica Veterinaria</h1>
-      <p class="lead">Cuidamos de tus mascotas con amor y dedicación.</p>
-      <img src="https://via.placeholder.com/800x400" alt="Mascotas" class="img-fluid mb-4">
-      <a href="#contacto" class="btn btn-primary btn-lg">¡Agenda una cita!</a>
-    </div>
-  </section>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Nuestros Servicios 🩺</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/6759603/pexels-photo-6759603.jpeg" class="img-fluid mb-3" alt="Consulta">
+                    <h4>Consulta General</h4>
+                    <p>Revisión y diagnóstico completo de la salud de tu mascota.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/6235251/pexels-photo-6235251.jpeg" class="img-fluid mb-3" alt="Vacunación">
+                    <h4>Vacunación</h4>
+                    <p>Protocolo de vacunas para proteger a tus mascotas de enfermedades.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/6235141/pexels-photo-6235141.jpeg" class="img-fluid mb-3" alt="Emergencias">
+                    <h4>Emergencias</h4>
+                    <p>Atención 24/7 para situaciones urgentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Servicios Section -->
-  <section id="servicios" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Nuestros Servicios</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Consulta general">
-          <h4>Consulta General</h4>
-          <p>Evaluación de la salud de tu mascota y recomendaciones.</p>
+    <!-- Sección Nuestro Equipo -->
+    <section id="equipo" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Nuestro Equipo 🐶🐱</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/6234570/pexels-photo-6234570.jpeg" class="img-fluid rounded-circle mb-3" alt="Veterinario 1">
+                    <h4>Dr. Juan Pérez</h4>
+                    <p>Especialista en cuidados intensivos</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/6234573/pexels-photo-6234573.jpeg" class="img-fluid rounded-circle mb-3" alt="Veterinario 2">
+                    <h4>Dra. Ana López</h4>
+                    <p>Cirujana veterinaria</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.pexels.com/photos/6234576/pexels-photo-6234576.jpeg" class="img-fluid rounded-circle mb-3" alt="Veterinario 3">
+                    <h4>Dr. Carlos Ruiz</h4>
+                    <p>Especialista en dermatología</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Vacunación">
-          <h4>Vacunación</h4>
-          <p>Protege a tu mascota con nuestras vacunas seguras y efectivas.</p>
-        </div>
-        <div class="col-md-4">
-          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Cirugía">
-          <h4>Cirugía</h4>
-          <p>Intervenciones quirúrgicas con tecnología avanzada y cuidado.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Nuestro Equipo Section -->
-  <section id="equipo" class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Nuestro Equipo</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Dr. López">
-          <h4>Dr. López</h4>
-          <p>Especialista en medicina felina</p>
+    <!-- Tarjeta de Contacto -->
+    <section id="contacto" class="text-center py-5">
+        <div class="container">
+            <h2 class="mb-4">Contáctanos 📞</h2>
+            <div class="contact-card p-4">
+                <h4 class="phone-number">+1 (555) 123-4567</h4>
+            </div>
         </div>
-        <div class="col-md-4">
-          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Dra. Martínez">
-          <h4>Dra. Martínez</h4>
-          <p>Especialista en dermatología animal</p>
-        </div>
-        <div class="col-md-4">
-          <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Dr. González">
-          <h4>Dr. González</h4>
-          <p>Especialista en cirugía veterinaria</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contacto Section -->
-  <section id="contacto" class="py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="mb-4">Contacto</h2>
-      <p><i class="fas fa-phone-alt"></i> Llámanos al <strong>+1 234 567 890</strong></p>
-      <form class="mt-4">
-        <div class="form-row justify-content-center">
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Nombre" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="email" class="form-control" placeholder="Email" required>
-          </div>
+    <!-- Sección Contacto -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Formulario de Contacto ✉️</h2>
+            <form action="submit.php" method="post" class="mx-auto w-50">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <p class="mt-3">O contáctanos por WhatsApp al <strong>+1 (555) 987-6543</strong> 📱</p>
         </div>
-        <div class="form-group">
-          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>Síguenos en nuestras redes sociales</p>
+        <div class="social-icons">
+            <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-      </form>
-      <p class="mt-4"><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/1234567890" target="_blank">+1 234 567 890</a></p>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-3">
-    <div class="container">
-      <p>Síguenos en nuestras redes sociales:</p>
-      <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
-      <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
